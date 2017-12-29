@@ -3,8 +3,8 @@ server:
 
 pig:
   auth:
-    clientId: ENC(Ho5VxMWMMIzfIEE8/WxVzA==)
-    clientSecret: ENC(Ho5VxMWMMIzfIEE8/WxVzA==)
+    clientId: ENC(LWeejg+IhLP2UX8reO/TSJg62+IAFj1u)
+    clientSecret: ENC(LWeejg+IhLP2UX8reO/TSJg62+IAFj1u)
     scope: server
     
 logging:
