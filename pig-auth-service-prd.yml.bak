@@ -3,8 +3,8 @@ server:
 
 pig:
   auth:
-    clientId: ENC(Ho5VxMWMMIzfIEE8/WxVzA==)
-    clientSecret: ENC(Ho5VxMWMMIzfIEE8/WxVzA==)
+    clientId: ENC(LWeejg+IhLP2UX8reO/TSJg62+IAFj1u)
+    clientSecret: ENC(LWeejg+IhLP2UX8reO/TSJg62+IAFj1u)
     scope: server
     
 ribbon:
@@ -23,9 +23,9 @@ feign:
     
 spring:
   redis:
-    host: 192.168.1.59
+    host: 123.206.94.20
     port: 6379
-    password: ENC(pr0Ohcnc2rcqFjM/8OCjPA==)
+    password: ENC(LWeejg+IhLP2UX8reO/TSJg62+IAFj1u)
 #加密参数
 jasypt:
   encryptor:

@@ -25,7 +25,7 @@ spring:
   redis:
     host: 192.168.1.59
     port: 6379
-    password: ENC(pr0Ohcnc2rcqFjM/8OCjPA==)
+    password: ENC(LWeejg+IhLP2UX8reO/TSJg62+IAFj1u)
 #加密参数
 jasypt:
   encryptor:

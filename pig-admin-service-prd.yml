@@ -10,12 +10,12 @@ spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
-    password: root
+    password: lengleng
     url: jdbc:mysql://127.0.0.1:3306/pig?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true
   redis:
     host: 192.168.1.59
     port: 6379
-    password: ENC(pr0Ohcnc2rcqFjM/8OCjPA==)
+    password: ENC(LWeejg+IhLP2UX8reO/TSJg62+IAFj1u)
   rabbitmq:
     host: 192.168.1.59
     port: 5672

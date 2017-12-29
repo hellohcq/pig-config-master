@@ -2,13 +2,13 @@ spring:
   redis:
     host: 192.168.1.59
     port: 6379
-    password: ENC(pr0Ohcnc2rcqFjM/8OCjPA==)
+    password: ENC(LWeejg+IhLP2UX8reO/TSJg62+IAFj1u)
   http:
     multipart:
       max-file-size: 1000MB
       max-request-size: 1000MB
   rabbitmq:
-    host: 192.168.1.59
+    host: 123.206.94.20
     port: 5672
     username: lengleng
     password: lengleng
