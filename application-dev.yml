@@ -5,7 +5,7 @@ jasypt:
 
 spring:
   redis:
-    host: 127.0.0.1
+    host: 192.168.1.59
     port: 6379
     password: ENC(LWeejg+IhLP2UX8reO/TSJg62+IAFj1u)
   http:
