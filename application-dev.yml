@@ -1,14 +1,14 @@
 #加密配置
 jasypt:
   encryptor:
-    password: ezh
+    password: lengleng
 
 spring:
   redis:
     remote: true        #是否是cachecloud 获取
-    host: 192.168.1.59
-    port: 6379
-    password: 
+    host: 106.14.69.75
+    port: 6381
+    password:
   http:
     multipart:
       max-file-size: 1000MB
