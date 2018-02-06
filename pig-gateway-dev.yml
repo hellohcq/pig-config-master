@@ -3,11 +3,17 @@ server:
 
 spring:
   rabbitmq:
-    host: 192.168.1.59
-    port: 5672
-    username: lengleng
-    password: lengleng
-    
+    host: 106.14.69.75
+    port: 5682
+    username: pig
+    password: ENC(gc16brBHPNq27HsjaULgKGq00Rz6ZUji)
+  zipkin:
+    rabbitmq:
+      queue: zipkin
+  sleuth:
+    sampler:
+      percentage: 1.0
+      
 hystrix:
   command:
     default:
@@ -22,14 +28,14 @@ zuul:
     connect-timeout-millis: 30000
     socket-timeout-millis: 30000
   routes:
-    auth-service:
+    pig-auth:
       path: /auth/**
-      serviceId: pig-auth-service
+      serviceId: pig-auth
       stripPrefix: true
       sensitiveHeaders:
-    pig-admin-service:
+    pig-upms-service:
       path: /admin/**
-      serviceId: pig-admin-service
+      serviceId: pig-upms-service
       stripPrefix: true
       sensitiveHeaders:
   ratelimit:
@@ -38,11 +44,11 @@ zuul:
     repository: REDIS 
     behind-proxy: true
     policies:
-      pig-admin-service:
+      pig-upms-service:
         limit: 100
         quota: 100
         refresh-interval: 3
-  
+
 security:
   validate:
     code: false
@@ -50,20 +56,21 @@ security:
   oauth2:
     resource:
       loadBalanced: true
-      user-info-uri: http://pig-auth-service/user
+      user-info-uri: http://pig-auth/user
       prefer-token-info: false
       service-id: pig-gateway
-    
-filter:
-  urls:
-    anon:
-      - /auth/**
-      - /admin/code/*
-      - /swagger-resources/**
-      - /swagger-ui.html
-      - /*/v2/api-docs
-      - /swagger/api-docs
-      - /webjars/**
+
+urls:
+  anon:
+    - /mobile/**
+    - /auth/**
+    - /admin/code/*
+    - /admin/smsCode/*
+    - /swagger-resources/**
+    - /swagger-ui.html
+    - /*/v2/api-docs
+    - /swagger/api-docs
+    - /webjars/**
        
 logging:
   config: classpath:logback.xml
