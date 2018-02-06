@@ -11,8 +11,8 @@ spring:
       
 pig:
   auth:
-    clientId: ezh
-    clientSecret: ezh
+    clientId: ENC(Ho5VxMWMMIzfIEE8/WxVzA==)
+    clientSecret: ENC(Ho5VxMWMMIzfIEE8/WxVzA==)
     scope: server
   social:
     qq:

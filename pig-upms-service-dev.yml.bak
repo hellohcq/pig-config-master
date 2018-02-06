@@ -13,10 +13,10 @@ spring:
     password: root
     url: jdbc:mysql://192.168.1.82:3306/pig?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
   rabbitmq:
-    host: 1982.168.1.59
-    port: 5672
-    username: admin
-    password: admin
+    host: 106.14.69.75
+    port: 5682
+    username: pig
+    password: lengleng
   zipkin:
     rabbitmq:
       queue: zipkin

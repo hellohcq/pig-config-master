@@ -12,9 +12,9 @@ spring:
 zipkin:
   collector:
     rabbitmq:
-      addresses: 192.168.1.59:5672
-      password: admin
-      username: admin
+      addresses: 106.14.69.75:5682
+      password: lengleng
+      username: pig
       queue: zipkin
   storage:
     type: mysql
